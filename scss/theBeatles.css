@@ -1,0 +1,581 @@
+@font-face {
+  font-family: "Thin";
+  src: url("/content/fonts/PPNeueMontreal-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Light";
+  src: url("/content/fonts/PPNeueMontreal-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Medium";
+  src: url("/content/fonts/PPNeueMontreal-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Regular";
+  src: url("/content/fonts/PPNeueMontreal-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Bold";
+  src: url("/content/fonts/PPNeueMontreal-Bold.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  background-color: #181a1b;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  z-index: 2;
+  margin-top: 1em;
+  margin-left: 1em;
+  width: 20em;
+  display: grid;
+  grid-template-columns: 4em 1fr;
+  border-radius: 2em;
+}
+nav .navLogo {
+  width: 4em;
+}
+nav .navLinks {
+  padding: 0em 1.4em 0em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+nav .navLinks li a {
+  color: #dcdad5;
+  font-family: regular;
+  letter-spacing: 0.07em;
+  font-size: 0.9em;
+}
+nav .navLinks li .projectsNav {
+  color: #7c8326;
+}
+nav .navBackDrop {
+  position: fixed;
+  z-index: -1;
+  width: 20em;
+  height: 4em;
+  border-radius: 2em;
+  background: inherit;
+  overflow: hidden;
+}
+nav .navBackDrop:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(40px);
+  margin: -5px;
+}
+
+main .header {
+  width: 100%;
+  height: 30em;
+}
+main .header .headerTop {
+  width: 100%;
+  height: 100%;
+  background-color: #7c8326;
+  padding: 1em;
+}
+main .header .headerTop .headerTopText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+main .header .headerTop .headerTopText .exploring {
+  color: #a2a66c;
+  font-family: medium;
+}
+main .header .headerTop .headerTopText p {
+  color: #dcdad5;
+  font-family: medium;
+  font-size: 2.8em;
+}
+main .container .containerInner {
+  margin: 0.6em;
+  display: grid;
+  grid-gap: 0.6em;
+  grid-template-columns: 1fr;
+  grid-template-areas: "one" "two" "three" "four" "five" "six" "sev" "eight" "nine" "ten" "eleven" "twelve" "thirteen" "fourteen" "fifteen";
+}
+main .container .containerInner .con {
+  background-color: #2d2d2d;
+}
+main .container .containerInner .con video, main .container .containerInner .con img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .container .containerInner .con1 {
+  grid-area: one;
+}
+main .container .containerInner .con2 {
+  grid-area: two;
+}
+main .container .containerInner .con3 {
+  grid-area: three;
+}
+main .container .containerInner .con4 {
+  grid-area: four;
+}
+main .container .containerInner .con5 {
+  grid-area: five;
+}
+main .container .containerInner .con6 {
+  grid-area: six;
+}
+main .container .containerInner .con7 {
+  grid-area: sev;
+}
+main .container .containerInner .con8 {
+  grid-area: eight;
+}
+main .container .containerInner .con9 {
+  grid-area: nine;
+}
+main .container .containerInner .con10 {
+  grid-area: ten;
+}
+main .container .containerInner .con11 {
+  grid-area: eleven;
+}
+main .container .containerInner .con12 {
+  grid-area: twelve;
+}
+main .container .containerInner .con13 {
+  grid-area: thirteen;
+}
+main .container .containerInner .con14 {
+  grid-area: fourteen;
+}
+main .container .containerInner .con15 {
+  grid-area: fifteen;
+}
+main .container .containerInner .conBlock {
+  padding: 1em;
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+main .container .containerInner .conBlock .titleButton {
+  height: 1.5em;
+  width: 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  color: #2d2d2d;
+  background-color: #7c8326;
+}
+main .container .containerInner .conBlock .titleButton .titleText {
+  font-family: medium;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+}
+main .container .containerInner .conBlock .textCon {
+  color: #dcdad5;
+}
+main .container .containerInner .conBlock .textCon .subjectCon {
+  margin-top: 1em;
+}
+main .container .containerInner .conBlock .textCon .subjectCon .subjectText {
+  font-family: regular;
+  font-size: 0.9em;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35em;
+}
+main .container .containerInner .conBlock2 {
+  padding: 1em;
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+main .container .containerInner .conBlock2 .titleButton {
+  height: 1.5em;
+  width: 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  color: #2d2d2d;
+  background-color: #7c8326;
+}
+main .container .containerInner .conBlock2 .titleButton .titleText {
+  font-family: medium;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+}
+main .container .containerInner .conBlock2 .textCon {
+  color: #dcdad5;
+}
+main .container .containerInner .conBlock2 .textCon .subjectCon {
+  margin-top: 1em;
+}
+main .container .containerInner .conBlock2 .textCon .subjectCon .subjectText {
+  font-family: regular;
+  font-size: 0.9em;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35em;
+}
+main .base .base1 {
+  background-color: #7c8326;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.6em;
+}
+main .base .base1 .base1Image img {
+  width: 100%;
+  display: block;
+}
+main .base .base1 .base1Text {
+  padding: 3em;
+}
+main .base .base1 .base1Text .base1TextInner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .base .base1 .base1Text .base1TextInner .contactLogos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .base .base1 .base1Text .base1TextInner .contactLogo {
+  width: 100%;
+  max-width: 2.5em;
+  margin-bottom: 3em;
+  fill: #dcdad5;
+}
+main .base .base1 .base1Text .base1TextInner .base1Description {
+  font-family: regular;
+  text-align: center;
+  color: #dcdad5;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+main .base .base1 .base1Text .base1TextInner .base1Description .exploring {
+  color: #a2a66c;
+}
+main .base .base1 .base1Text .base1TextInner .base1Button {
+  width: 5.8em;
+  height: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d2d2d;
+  border-radius: 1em;
+}
+main .base .base1 .base1Text .base1TextInner .base1Button a {
+  font-size: 0.9em;
+  color: #dcdad5;
+  font-family: regular;
+  letter-spacing: 0.05em;
+}
+main .base .base2 {
+  background-color: #2d2d2d;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  padding: 0.6em;
+  padding-top: 1em;
+}
+main .base .base2 .base2Text {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .base .base2 .base2Text .baseNav .baseContactButton {
+  margin-bottom: 1em;
+  font-size: 0.7em;
+  color: #7c8326;
+  font-family: medium;
+  letter-spacing: 0.07em;
+}
+main .base .base2 .base2Text .baseNav li {
+  margin-bottom: 0.5em;
+}
+main .base .base2 .base2Text .baseNav li a {
+  font-size: 0.8em;
+  color: #dcdad5;
+  font-family: regular;
+  letter-spacing: 0.07em;
+}
+main .base .base2 .base2Text .baseContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+main .base .base2 .base2Text .baseContact .baseContactButton {
+  margin-bottom: 1em;
+  font-size: 0.7em;
+  color: #7c8326;
+  font-family: medium;
+  letter-spacing: 0.07em;
+}
+main .base .base2 .base2Text .baseContact .baseContactInner {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+main .base .base2 .base2Text .baseContact .baseContactInner a {
+  font-size: 0.8em;
+  color: #dcdad5;
+  font-family: regular;
+  letter-spacing: 0.07em;
+}
+main .base .base2 .base2Text .baseContact .baseContactInner p {
+  margin-bottom: 0.2em;
+  font-size: 0.8em;
+  color: #dcdad5;
+  font-family: light;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+}
+main .base .base3 {
+  height: 7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .base .base3 .base3Text {
+  color: #dcdad5;
+  font-family: regular;
+  font-size: 0.75em;
+  letter-spacing: 0.07em;
+}
+
+@media (min-width: 700px) {
+  nav .navLinks {
+    padding: 0em 1.4em 0em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  nav .navLinks li a {
+    color: #dcdad5;
+    font-family: regular;
+    letter-spacing: 0.07em;
+    font-size: 0.9em;
+  }
+  nav .navLinks li a:hover {
+    color: #7c8326;
+  }
+  main .header {
+    height: 45em;
+  }
+  main .header .headerTop .headerTopText {
+    max-width: 900px;
+  }
+  main .header .headerTop .headerTopText p {
+    font-size: 5em;
+  }
+  main .container .containerInner {
+    display: grid;
+    grid-template-columns: 14.3%;
+    grid-template-areas: "one one one two two" "three three three two two" "four four four five five" "six six six eight eight" "sev sev sev eight eight" "nine nine nine ten ten" "eleven eleven twelve twelve twelve" "thirteen thirteen thirteen fourteen fourteen" "thirteen thirteen thirteen fifteen fifteen";
+  }
+  main .container .containerInner .con {
+    background-color: #2d2d2d;
+  }
+  main .container .containerInner .con video, main .container .containerInner .con img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .container .containerInner .conBlock {
+    padding: 1em;
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  main .container .containerInner .conBlock .titleButton {
+    height: 1.5em;
+    width: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    color: #2d2d2d;
+    background-color: #7c8326;
+  }
+  main .container .containerInner .conBlock .titleButton .titleText {
+    font-family: medium;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+  }
+  main .container .containerInner .conBlock .textCon {
+    color: #dcdad5;
+  }
+  main .container .containerInner .conBlock .textCon .subjectCon {
+    margin-top: 1em;
+  }
+  main .container .containerInner .conBlock .textCon .subjectCon .subjectText {
+    font-family: regular;
+    font-size: 1em;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.35em;
+  }
+  main .container .containerInner .conBlock2 {
+    padding: 1em;
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  main .container .containerInner .conBlock2 .titleButton {
+    height: 1.5em;
+    width: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    color: #2d2d2d;
+    background-color: #7c8326;
+  }
+  main .container .containerInner .conBlock2 .titleButton .titleText {
+    font-family: medium;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+  }
+  main .container .containerInner .conBlock2 .textCon {
+    color: #dcdad5;
+  }
+  main .container .containerInner .conBlock2 .textCon .subjectCon {
+    margin-top: 1em;
+  }
+  main .container .containerInner .conBlock2 .textCon .subjectCon .subjectText {
+    font-family: regular;
+    font-size: 1em;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.35em;
+    text-align: right;
+  }
+  main .base .base1 {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  main .base .base1 .base1Text .base1TextInner .contactLogos {
+    width: 75%;
+    max-width: 35em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .base .base1 .base1Text .base1TextInner .contactLogo {
+    width: 20%;
+    max-width: 3em;
+    margin-bottom: 5em;
+    fill: #dcdad5;
+  }
+  main .base .base1 .base1Text .base1TextInner .contactLogo a:hover, main .base .base1 .base1Text .base1TextInner .contactLogo svg:hover {
+    fill: #2d2d2d;
+  }
+  main .base .base1 .base1Text .base1TextInner .base1Description {
+    font-size: 2em;
+  }
+  main .base .base1 .base1Text .base1TextInner .base1Button {
+    width: 6em;
+    height: 2em;
+  }
+  main .base .base1 .base1Text .base1TextInner .base1Button a {
+    font-size: 0.9em;
+    color: #dcdad5;
+    font-family: regular;
+    letter-spacing: 0.07em;
+  }
+  main .base .base1 .base1Text .base1TextInner .base1Button:hover {
+    background-color: #dcdad5;
+    cursor: pointer;
+  }
+  main .base .base1 .base1Text .base1TextInner .base1Button:hover a {
+    color: #2d2d2d;
+  }
+  main .base .base2 {
+    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  main .base .base2 .base2Text .baseNav .baseContactButton {
+    font-size: 0.8em;
+  }
+  main .base .base2 .base2Text .baseNav li a {
+    font-size: 0.9em;
+    font-family: medium;
+  }
+  main .base .base2 .base2Text .baseNav li a:hover {
+    color: #7c8326;
+  }
+  main .base .base2 .base2Text .baseContact .baseContactButton {
+    font-size: 0.8em;
+  }
+  main .base .base2 .base2Text .baseContact .baseContactInner:hover {
+    cursor: pointer;
+  }
+  main .base .base2 .base2Text .baseContact .baseContactInner a {
+    font-size: 0.9em;
+    font-family: medium;
+    letter-spacing: 0.07em;
+  }
+  main .base .base2 .base2Text .baseContact .baseContactInner a:hover {
+    color: #7c8326;
+  }
+  main .base .base2 .base2Text .baseContact .baseContactInner p {
+    font-size: 0.9em;
+    font-family: light;
+    letter-spacing: 0.07em;
+  }
+  main .base .base3 {
+    height: 3.5em;
+  }
+  main .base .base3 .base3Text {
+    font-family: medium;
+    font-size: 0.75em;
+    letter-spacing: 0.04em;
+  }
+}/*# sourceMappingURL=theBeatles.css.map */
