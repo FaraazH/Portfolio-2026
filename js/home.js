@@ -10,3 +10,4 @@ for (let i = 0; i < document.links.length; i++) {
 let homeNav = document.querySelector('.homeNav');
 document.links[active].className = homeNav.classList.add('contactFill');
 
+window.addEventListener("homeNav", homeNav.classList.add('contactFill'));

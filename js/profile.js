@@ -9,3 +9,6 @@ for (let i = 0; i < document.links.length; i++) {
 
 let profileNav = document.querySelector('.profileNav');
 document.links[active].className = profileNav.classList.add('contactFill');
+
+
+

@@ -307,12 +307,6 @@ main .base .base3 .base3Text {
     justify-content: space-between;
     list-style: none;
   }
-  nav .navLinks li a {
-    color: #dcdad5;
-    font-family: regular;
-    letter-spacing: 0.07em;
-    font-size: 0.9em;
-  }
   nav .navLinks li a:hover {
     color: #7c8326;
   }
