@@ -66,7 +66,7 @@ nav .navLinks li a {
   font-size: 0.9em;
 }
 nav .navLinks li .contactFill {
-  color: #7c8326;
+  color: #181a1b;
 }
 nav .navBackDrop {
   position: fixed;
@@ -308,7 +308,7 @@ main .base .base3 .base3Text {
     list-style: none;
   }
   nav .navLinks li a:hover {
-    color: #7c8326;
+    color: #181a1b;
   }
   main .header {
     height: 45em;
